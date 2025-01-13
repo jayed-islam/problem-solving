@@ -4,11 +4,13 @@ const people = [
   { name: "Jane", age: 22, gender: "female" },
   { name: "Mike", age: 30, gender: "male" },
   { name: "Emily", age: 28, gender: "female" },
+  { name: "Shaila", age: 21, gender: "Other" },
+  { name: "Abdullah", age: 19, gender: "Other" },
 ];
 
 const filterAndMapNames = (people) => {
   return people
-    .filter((person) => person.gender === "male")
+    .filter((person) => person.gender !== "female")
     .map((person) => person.name);
 };
 
